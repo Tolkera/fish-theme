@@ -1,0 +1,51 @@
+.social-links__item {
+  display: inline-block;
+
+}
+
+.social-icon {
+  display: inline-block;
+  width: 31px;
+  height: 31px;
+  background: url('../img/header/socialicons.png') no-repeat;
+  position: relative;
+  text-indent: 100%;
+  overflow: hidden;
+}
+
+.ie7 .social-links__item {
+  display: inline;
+  zoom: 1;
+}
+
+.social-icon--facebook {
+  background-position: 0 0;
+
+  &:hover {
+    background-position: 0 -31px;
+  }
+}
+
+.social-icon--twitter {
+  background-position: -44px 0;
+
+  &:hover {
+    background-position: -44px -31px;
+  }
+}
+
+.social-icon--rss {
+  background-position: -87px 0;
+
+  &:hover {
+    background-position: -87px -31px;
+  }
+}
+
+.social-icon--email {
+  background-position: -130px 0;
+
+  &:hover {
+    background-position: -130px -31px;
+  }
+}

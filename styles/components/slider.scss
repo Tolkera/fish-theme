@@ -1,0 +1,140 @@
+.main-slider-wrap {
+  position: relative;
+  width: 568px;
+  height: 273px;
+  margin-left: 20px;
+
+  &:before {
+    content:"";
+    position: absolute;
+    background: url('../img/slider/slider_frame_1.png') no-repeat 0 0;
+    width: 570px;
+    height: 274px;
+    z-index: 30;
+    left: -1px;
+  }
+
+  &:after {
+    content:"";
+    background: url('../img/slider/slider_shadow.png') no-repeat 0 0;
+    position: absolute;
+    width: 740px;
+    height: 149px;
+    left: -89px;
+    bottom: -50px;
+    z-index: 25;
+  }
+
+  @media(max-width: $tablet) {
+    margin: 0 auto;
+
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.main-slider {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.main-slider__item {
+  float: left;
+}
+
+
+.slider-arrow-nav {
+  position: absolute;
+  width: 44px;
+  height: 52px;
+  background: url('../img/slider/slider_arrow.png') no-repeat;
+  text-indent: -9999px;
+  border: 0;
+  z-index: 50;
+  outline: none;
+  top: 40%;
+}
+
+
+.nav-arrow--prev {
+  background-position: 0 0;
+  left: -30px;
+
+  &:hover {
+    background-position: 0 -57px;
+  }
+}
+
+
+.nav-arrow--next {
+  background-position: -54px 0;
+  right: -30px;
+
+  &:hover {
+    background-position: -54px -57px;
+  }
+}
+
+.bullet-nav {
+  text-align: center;
+  z-index: 100;
+  margin-top: 20px;
+  position: relative;
+}
+
+
+.bullet-nav__item {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  background: url('../img/slider/slider_pagination.png') no-repeat 0 0;
+  cursor: pointer;
+  margin-right: 3px;
+
+  &:hover {
+    background-position: 0 -14px;
+  }
+}
+
+.selected {
+  background: url('../img/slider/slider_pagination.png') no-repeat 0 0;
+  background-position: 0 -14px;
+}
+
+.ie7 .slider_pagination_item {
+  display: inline;
+  zoom: 1;
+}
+
+
+.food-slider__arrow {
+  top: 140px;
+}
+
+.food-slider {
+  background: url('../img/bg/catch.png') no-repeat 0 0;
+  height: 310px;
+  margin-top: 40px;
+  margin-left: 15px;
+  width: 530px;
+  padding: 0 20px 0 24px;
+  position: relative;
+  box-shadow: 0px 20px 15px 0px rgba(0,0,0,0.5);
+  margin-bottom: 40px;
+
+  .food-item{
+    float: left;
+  }
+
+  @media(max-width: $tablet) {
+    margin: 0 auto;
+  }
+}
+
+
+.prev_food_arrow,
+.next_food_arrow {
+  top: 170px;
+}

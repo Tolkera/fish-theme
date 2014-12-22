@@ -1,0 +1,53 @@
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  font-family: $font-regular;
+  font-size: 13px;
+  line-height: 1.3;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $font-heading;
+  font-weight: normal;
+
+  a{
+    color: inherit;
+
+    &:hover {
+      color: #ac543d;
+    }
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input, textarea {
+  border: 0;
+  display: block;
+  outline: none;
+}
+
+li a {
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+}
+
+
+article p {
+  margin-top: 15px;
+}

@@ -1,0 +1,29 @@
+.site-header {
+  @media(max-width: $tablet){
+    padding: 0 10px;
+  }
+}
+
+.branding {
+  float: left;
+}
+
+.branding__tagline {
+  font-family: $font-fancy-heading;
+  text-transform: uppercase;
+  font-size: 34px;
+  color: #ce5f43;
+  letter-spacing: 1px;
+}
+
+.contact-group {
+  float: right;
+  text-align: right;
+  margin-top: 15px;
+}
+
+.contact-group__text {
+  font-weight: bold;
+  color: $color-brand;
+  margin-top: 15px;
+}
